@@ -139,6 +139,8 @@ class ClickUp:
     ) -> List[Task]:
         """fetches the tasks according to the given options"""
         params = filter_locals(locals(), extras=["team_id"])
+        # add in the kwargs
+        params = {**params, **kwargs}
 
         for option in self.task_boolean_options:
             if option in params:
