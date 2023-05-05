@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 
 __library__ = "pyclickup"
-__version__ = "VERSION"
+__version__ = "2023.5.5" # faked, to get over PEP 440
 
 __user__ = "https://github.com/jpetrucciani"
 
